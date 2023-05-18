@@ -1,0 +1,179 @@
+#LoginPage {
+    background: #18191A;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+    padding-top: 10vh;
+
+    flex-wrap: wrap;
+}
+
+.loginpage-part {
+    height: 70vh;
+    width: 45%;
+    min-width: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#LoginPage .loginpage-part:nth-child(2) {
+    color: goldenrod;
+
+    font-size: 20px;
+}
+
+#LoginPage .loginpage-part:nth-child(2) h1 {
+    font-size: 100px;
+}
+
+#LoginPage .loginpage-part:nth-child(2) p {}
+
+#LoginPage #loginform-container {
+    width: 70%;
+    min-width: 350px;
+    height: 100%;
+    max-height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px;
+}
+
+#LoginPage #loginform-container form h1,
+#LoginPage #registrationform-container form h1 {
+    color: goldenrod;
+    font-weight: 500;
+}
+
+#LoginPage #loginform-container form {
+    background: #232323;
+    height: 80%;
+    min-height: fit-content;
+    width: 100%;
+
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 20px 25px 0 rgba(0, 0, 0, .5);
+}
+
+#LoginPage #loginform-container form input,
+#LoginPage #loginform-container form button,
+#registrationform-container form input,
+#registrationform-container form button {
+    margin: 10px 5px;
+    width: 80%;
+    height: 40px;
+
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    font-size: 15px;
+}
+
+#LoginPage #loginform-container form button:hover {
+    cursor: pointer;
+}
+
+#LoginPage #loginform-container form input {
+    background: #4E4F50;
+    color: white;
+}
+
+#LoginPage #loginform-container form #login-login-btn {
+    color: black;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#LoginPage #loginform-container form #login-login-btn:hover,
+#registrationform-container form button {
+    background: #c7c7c7;
+}
+
+#LoginPage #loginform-container form #login-login-btn:active {
+    transform: translateY(3px);
+}
+
+#LoginPage #loginform-container form #login-create-account-btn {
+    background: rgb(76, 185, 76);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#registrationform-container {
+    width: 100%;
+    min-height: fit-content;
+    height: 100%;
+}
+
+#registrationform-container form {
+    background: #232323;
+    height: 80%;
+    min-height: fit-content;
+    width: 100%;
+
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 20px 25px 0 rgba(0, 0, 0, .5);
+}
+
+#registrationform-container form input {
+    background: #4E4F50;
+    min-height: 50px;
+    height: 50px;
+
+    color: white;
+}
+
+#registrationform-container form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+#registrationform-container form button:active {
+    transform: translateY(5px);
+}
+
+#registrationform-container form a {
+    color: #8a8a8a;
+    cursor: pointer;
+    padding: 5px 0;
+
+    transition: all .5s;
+}
+
+#registrationform-container form a:hover {
+    color: white;
+}
+
+#registrationform-container form input.reg-invalid-input {
+    border: 1px solid red;
+}
+
+#registrationform-container form input.reg-valid-input {
+    border: 1px solid goldenrod;
+}
